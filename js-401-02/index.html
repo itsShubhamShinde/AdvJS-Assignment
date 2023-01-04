@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container{
+            border: 2px solid black;
+            height: 100%;
+            width: 50%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .child{
+            border: 2px solid black;
+            height: 8%;
+            width: 30%;
+            
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="child">1st child</div>
+        <div class="child">2nd child</div>
+        <div class="child">3rd child</div>
+        <div class="child">4th child</div>
+        <div class="child">5th child</div>
+        <div class="child">6th child</div>
+        <div class="child">7th child</div>
+        <div class="child">8th child</div>
+        <div class="child">9th child</div>
+        <div class="child">10th child</div>
+        <div class="child">11th child</div>
+        <div class="child">12th child</div>
+        <div class="child">13th child</div>
+        <div class="child">14th child</div>
+        <div class="child">15th child</div>
+        <div class="child">16th child</div>
+        <div class="child">17th child</div>
+
+        <button onclick= color() type="submit">Click Here</button>
+    </div>
+    <script>
+        function color(){
+            var temp = document.getElementsByClassName("child")
+            for(let i=0;i<temp.length;i++){
+                if(i%2==1){
+                    temp[i].setAttribute("style","background-color: lime")
+                    temp[i].style.color = 'white';
+                }
+            }
+            temp[0].setAttribute("style","background-color:blue");
+            temp[0].style.color = 'white';
+            temp[temp.length-1].setAttribute("style","background-color:palevioletred ");
+            temp[temp.length-1].style.color = 'white';
+
+            temp[8].setAttribute("style","background-color:green  ");
+            temp[8].style.color = 'white';
+        }
+    </script>
+</body>
+</html>
