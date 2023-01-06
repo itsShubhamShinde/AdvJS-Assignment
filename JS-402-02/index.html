@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .mainDiv{
+            /* border: 2px solid black; */
+            height: 60vh;
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .BeforeDiv{
+            /* border: 2px solid black; */
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .BeforeDiv h1{
+            color: green;
+        }
+        .AfterDiv{
+            /* border: 2px solid black; */
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="BeforeDiv">
+            <h1>Geekstar</h1>
+            <p><b>Click on the button to add image element</b></p>
+            <button onclick="fun()">click here</button>
+        </div>
+        <div id="ImageAdd" class="AfterDiv"></div>
+
+    </div>
+    <script>
+        var addImage = document.getElementById("ImageAdd")
+        function fun(){
+            addImage.innerHTML=""
+            var div = document.createElement("div")
+            var h2 = document.createElement("h2")
+            var img = document.createElement("img")
+            div.appendChild(h2)
+            div.appendChild(img)
+
+            div.classList.add("imageshow")
+            h2.innerHTML="Image Element Added."
+            h2.style.color="green"
+            img.src="https://bl-i.thgim.com/public/incoming/89s94/article65661458.ece/alternates/FREE_1200/Geekster%20Logo%20new%20%281%29.png"
+            img.style.width="80%"
+            img.style.height="25%"
+            img.style.marginTop="30px"
+            img.style.marginLeft="30px"
+            addImage.appendChild(div)
+        }
+    </script>
+</body>
+</html>
