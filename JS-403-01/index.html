@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JS Assignment</title>
+</head>
+<body>
+   <div class="mainContainer">
+    <div class="div">
+        <h2 id="head1">Press any keyboard key</h2>
+    </div>
+    <div id="head2" class="div2">
+    </div>
+   </div>
+    <script>
+        document.addEventListener("keypress",(event)=>{
+            var main = document.getElementById("head2")
+            main.innerHTML = ""
+            var name = event.key;
+            var charCode = event.charCode;
+            let head1 = document.getElementById("head1");
+            head1.innerHTML = `You Pressed `
+
+            var code = document.createElement("div")
+            code.classList.add("charCode")
+            var h2 = document.createElement("h2")
+            code.appendChild(h2)
+            h2.innerHTML = charCode;
+            h2.style.color = "green";
+            h2.style.fontSize="3rem"
+            h2.style.boxShadow="2px 2px 5px  gray"
+            var a = document.createElement("a")
+            head1.appendChild(a)
+            a.innerHTML = name;
+            a.style.color = "green"
+
+            main.appendChild(code)
+
+
+        })
+    </script>
+</body>
+</html>
