@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="formContainer">
+        <div class="div1">
+            <h1>Shubham Tip </h1>
+            <h1>Calculator</h1>
+            <hr>
+        </div>
+
+
+        <div class="div2">
+            <div class="para1">
+                <p><b>How much was your bill?</b></p>
+                <p><b>$</b><input type="text" id="input1"></p>
+            </div>
+           
+           
+            <div class="para2">
+                <p><b>How was your service?</b></p>
+                <select class="service"id="service">
+                    <option disabled selected value="0">--Choose your option--</option>
+                    <option value="0.3">30%-Outstanding</option>
+                    <option value="0.2">20%-good</option>
+                    <option value="0.15">15%-it was Okay</option>
+                    <option value="0.1">10%-Bad</option>
+                    <option value="0.05">5%-Terrible</option>
+
+                </select>
+            </div>
+            <div class="para3">
+                <p><b>How many people were sharing the</b></p>
+                <p><b>bill?</b><input type="number" id="input2"><b>people</b></p>
+            </div>
+            <button  type="submit" onclick="hello()">Calculate</button>
+        </div>
+
+        <div class="div3">
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+</html>
