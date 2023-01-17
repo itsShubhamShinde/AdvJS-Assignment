@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="upperDivHedding">
+            <h1>Calculate a weight of an object on a planet</h1>
+            <div class="divInput">
+                <input id="mass" class="mass" type="text" placeholder="Mass in Kilogram">
+                <select name="Planet" id="selectPlanet">
+                    <option disabled selected value="0" >--Choose your Planet--</option>
+                </select>
+                <button onclick="calculate()" id="btn">Calculate</button>
+            </div>
+        </div>
+       
+        <div id="answerDiv" class="LowerDivAnswer"></div>
+    </div>
+</body>
+</html>

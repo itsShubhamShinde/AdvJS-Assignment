@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainContainer{
+    /* border: 2px solid blue; */
+    height: 100vh;
+    width: 100vw;
+    background-image: url("planetImage/bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upperDivHedding{
+    /* border: 2px solid red; */
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    color: white;
+}
+.divInput{
+    /* border: 2px solid yellow; */
+    height: 40%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#mass{
+    /* border: 2px solid yellow; */
+    height: 60%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 1px 1px gray;
+    padding-left: 10px;
+}
+#selectPlanet{
+    /* border: 2px solid yellow; */
+    height: 60%;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 1px 1px gray;
+
+}
+#btn{
+    /* border: 2px solid yellow; */
+    height: 60%;
+    width: 20%; 
+    border-radius: 10px;
+}
+.LowerDivAnswer{
+    /* border: 2px solid red; */
+    height: 70%;
+    width: 80%;
+    
+}
+.alert{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 250px;
+}
+.alert h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.mainDiv{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 507px) and (max-width: 768px) {
+    .upperDivHedding{
+        /* border: 2px solid red; */
+        height: 30%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    h1{
+        /* border:2px solid red; */
+        color: white;
+        padding-left: 20px;
+    }
+    .divInput{
+        /* border: 2px solid yellow; */
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #mass{
+        /* border: 2px solid yellow; */
+        height: 60%;
+        width: 40%;
+        border-radius: 10px;
+        box-shadow: 1px 1px gray;
+        padding-left: 10px;
+    }
+   
+    #selectPlanet{
+        /* border: 2px solid yellow; */
+        height: 60%;
+        width: 30%;
+        border-radius: 10px;
+        box-shadow: 1px 1px gray;
+    
+    }
+    #btn{
+        /* border: 2px solid yellow; */
+        height: 60%;
+        width: 20%; 
+        border-radius: 10px;
+        font-size: .01 rem;
+    }
+    .LowerDivAnswer{
+        /* border: 2px solid red; */
+        height: 70%;
+        width: 80%;
+        
+    }
+    .alert{
+        width: 100%;
+        height: 90%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 250px;
+    }
+    .alert h1{
+        /* border: 2px solid red; */
+        /* padding: 50px; */
+        /* font-size: 20px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    .mainDiv{
+        /* border: 2px solid blue; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 507px) {
+    .upperDivHedding{
+        /* border: 2px solid red; */
+        height: 30%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    h1{
+        /* border:2px solid red; */
+        color: white;
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .divInput{
+        /* border: 2px solid yellow; */
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #mass{
+        /* border: 2px solid yellow; */
+        height: 60%;
+        width: 40%;
+        border-radius: 10px;
+        box-shadow: 1px 1px gray;
+        padding-left: 10px;
+    }
+    ::placeholder {
+        /* color: red; */
+        font-size: .01rem;
+      }
+    #selectPlanet{
+        /* border: 2px solid yellow; */
+        height: 60%;
+        width: 30%;
+        border-radius: 10px;
+        box-shadow: 1px 1px gray;
+    
+    }
+    #btn{
+        /* border: 2px solid yellow; */
+        height: 60%;
+        width: 20%; 
+        border-radius: 10px;
+        font-size: .01 rem;
+    }
+    .LowerDivAnswer{
+        /* border: 2px solid red; */
+        height: 70%;
+        width: 80%;
+        
+    }
+    .alert{
+        width: 100%;
+        height: 90%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 250px;
+    }
+    .alert h1{
+        /* border: 2px solid red; */
+        padding: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    .mainDiv{
+        /* border: 2px solid blue; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+}
