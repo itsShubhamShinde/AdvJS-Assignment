@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.outerContener{
+    /* border: 2px solid black; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.headingDiv{
+    /* border: 1px solid blue; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titleDiv{
+    /* border: 1px solid red; */
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: orange;
+}
+.buttonDiv{
+    /* border: 1px solid red; */
+    height: 45%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    box-shadow:0px .5px 0px 0px #888888,0px -.5px 0px 0px #888888;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.button{
+    /* border: 1px solid red; */
+    height: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#population{
+    background-color: orange;
+    /* border: 1px solid black; */
+    height: 80%;
+    width:45%;
+    border: none;
+}
+#language{
+    background-color: orange;
+    /* border: 1px solid black; */
+    height: 80%;
+    width:45%;
+    border: none;
+}
+.graphDiv{
+    /* border: 1px solid blue; */
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div{
+    /* border: 2px solid red; */
+    height: 10%;
+    width: 40%;
+}
