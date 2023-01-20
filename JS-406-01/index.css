@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.maincontainer{
+    /* border: 2px solid black; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchDiv{
+    /* border: 2px solid blue; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./image/bg4.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+.searchDiv h1{
+    font-size: 3rem;
+    color: white;
+
+}
+.searchDiv h3{
+    color: white;
+    font-size: 1.3rem;
+}
+.button{
+    /* border: 2px solid red; */
+    height: 15%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#first,#second{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 45%;
+    border-radius: 20px;
+    border: none;
+}
+#input{
+    border: none;
+    height: 17%;
+    width: 30%;
+    border-radius: 20px;
+    padding-left: 20px;
+    
+}
+.answeDiv{
+    border: 2px solid green;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: scroll;
+}
+.result{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#efefef ;
+    overflow-y: scroll;
+}
+.resultdiv{
+    /* border: 2px solid yellow; */
+    height:15%;
+    width: 15%;
+    margin: 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-image: url(./image/contry.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width:1024px){
+  
+.searchDiv h1{
+    font-size: 3rem;
+    color: white;
+
+}
+.searchDiv h3{
+    color: white;
+    font-size: 1.3rem;
+}
+.button{
+    height: 15%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#first,#second{
+    height: 100%;
+    width: 45%;
+    border-radius: 20px;
+    border: none;
+}
+#input{
+    border: none;
+    height: 17%;
+    width: 30%;
+    border-radius: 20px;
+    padding-left: 20px;
+    
+}
+.answeDiv{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: scroll;
+}
+.result{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#efefef ;
+    overflow-y: scroll;
+}
+.resultdiv{
+    height:15%;
+    width: 15%;
+    margin: 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-image: url(./image/contry.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .searchDiv h1{
+    font-size: 3rem;
+
+}
+.searchDiv h3{
+    font-size: 1.2rem;
+}
+.button{
+    height: 15%;
+    width: 60%;
+}
+#first,#second{
+    width: 45%;
+  
+}
+#input{
+    width: 40%;
+}
+
+.resultdiv{
+    font-size: 1rem;
+  
+}
+}
+
+@media only screen and (min-width:425px) and (max-width:768px){
+    .searchDiv h1{
+    font-size: 2rem;
+
+}
+.searchDiv h3{
+    font-size: 1.2rem;
+}
+.button{
+    /* border: 2px solid red; */
+    height: 15%;
+    width: 50%;
+}
+#first,#second{
+    font-size: .5rem;
+    width: 45%;
+  
+}
+#input{
+    width: 50%;
+
+}
+input::placeholder {
+    font-size: .1rem;
+}
+#countryCount{
+    font-size: 1rem;
+}
+.resultdiv{
+    font-size: .5rem;
+  
+}
+}
+
+@media only screen and (min-width:318px) and (max-width:425px){
+    .searchDiv h1{
+    font-size: 1.4rem;
+
+}
+.searchDiv h3{
+    font-size: .7rem;
+}
+.button{
+    /* border: 2px solid red; */
+    height: 15%;
+    width: 80%;
+}
+#first,#second{
+    font-size: .1rem;
+    width: 45%;
+  
+}
+#input{
+    width: 60%;
+
+}
+input::placeholder {
+    font-size: .1rem;
+}
+#countryCount{
+    font-size: .5rem;
+}
+.resultdiv{
+    font-size: .1rem;
+  
+}
+}
