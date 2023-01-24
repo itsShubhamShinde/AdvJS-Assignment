@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.maincontainer {
+    border: 1px solid gray;
+    height: 130vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.form {
+    width: 100%;
+    height: 90%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form div{
+    /* border: 2px solid green; */
+    height: 14%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 1rem;
+}
+
+input {
+    width: 70%;
+    height: 1.6rem;
+    margin-top: 0.2rem;
+    outline: none;
+
+}
+
+p {
+    color: #feae27;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin: 0.5rem;
+
+
+}
+
+button {
+    width: 20%;
+    height: 1.8rem;
+    background-color: #444444;
+    color: white;
+
+
+}
+
+
+@media only screen and (max-width:480px) {
+
+    /* body{
+        border: 2px red solid;
+    } */
+    .maincontainer {
+        width: 90%;
+        height: 100%;
+
+    }
+
+    .form {
+        height: 90%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+    }
+
+    label {
+        font-size: 1rem;
+
+    }
+
+    input {
+        width: 70%;
+        height: 1.5rem;
+        margin-top: 0.3rem;
+        outline: none;
+
+
+    }
+
+    p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin: 0.2rem;
+
+
+
+    }
+
+    button {
+        width: 30%;
+        height: 1.4rem;
+        background-color: #444444;
+        color: white;
+
+    }
+
+
+}
+
+@media only screen and (min-width:481px) and (max-width:786px) {
+
+    /* body{
+        border: 2px blue solid;
+    } */
+    .maincontainer {
+        width: 80%;
+        height: 100%;
+
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-left: 4rem;
+    }
+
+    /* .form{
+        border: 2px black solid;
+    } */
+    label {
+        font-size: 1.2rem;
+
+    }
+
+    input {
+        width: 65%;
+        height: 1.5rem;
+        margin-top: 0.3rem;
+        outline: none;
+
+
+    }
+
+    p {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 0.2rem;
+
+
+
+    }
+
+    button {
+        width: 30%;
+        height: 1.4rem;
+        background-color: #444444;
+        color: white;
+
+    }
+
+}
+
+@media only screen and (min-width:787px) and (max-width:1000px) {
+
+    /* body{
+        border: 2px green solid;
+    } */
+    .maincontainer {
+        width: 50%;
+        height: 100%;
+
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-left: 4rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+
+    }
+
+    input {
+        width: 65%;
+        height: 1.5rem;
+        margin-top: 0.4rem;
+        outline: none;
+
+
+    }
+
+    p {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 0.2rem;
+
+
+
+    }
+
+    button {
+        width: 30%;
+        height: 1.6rem;
+        background-color: #444444;
+        color: white;
+
+    }
+
+}
