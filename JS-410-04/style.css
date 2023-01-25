@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maincontainer {
+    border: 2px solid blue;
+    height: 100vh;
+    width: 100vw;
+    background-color: #5080fe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleDiv {
+    /* border: 2px solid blue; */
+    height: 13%;
+    width: 70%;
+    background-color: white;
+    font-size: 1.4rem;
+    color: #0d3b79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputDiv {
+    /* border: 2px solid blue; */
+    height: 30%;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputDiv input {
+    /* border: 1px solid black; */
+    height: 25%;
+    width: 70%;
+    padding-left: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.inputDiv button {
+    border: none;
+    height: 25%;
+    width: 30%;
+    font-size: medium;
+    color: white;
+    background-color: #1f60c8;
+    border-radius: 5px;
+}
+
+.answerDiv {
+    /* border: 2px solid blue; */
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wedDiv {
+    /* border: 2px solid red; */
+    background-color: #1e3cb4;
+    height: 20%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ansDiv {
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 80%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.ansDiv p {
+    color: #1e3cb6;
+}
+
+.ansDiv a {
+    color: #7a3f62;
+    ;
+}
+
+@media only screen and (max-width:480px) {
+    .titleDiv {
+        height: 10%;
+        width: 80%;
+        font-size: .5rem;
+    }
+
+    .inputDiv {
+        /* border: 2px solid blue; */
+        height: 30%;
+        width: 60%;
+       
+    }
+    
+    .inputDiv button {
+        border: none;
+        height: 25%;
+        width: 50%;
+        font-size: medium;
+        color: white;
+        background-color: #1f60c8;
+        border-radius: 5px;
+    }
+
+    .answerDiv {
+        width: 60%;
+    }
+    
+    .wedDiv {
+        /* border: 2px solid red; */
+        background-color: #1e3cb4;
+        height: 20%;
+        width: 100%;
+        font-size: .8rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ansDiv {
+        font-size: .8rem;
+    }
+}
+@media only screen and (min-width:480px) and (max-width:780px) {
+    .titleDiv {
+        height: 13%;
+        width: 70%;
+        font-size: .7rem;
+    }
+    .inputDiv button {
+        width: 40%;
+    }
+
+    .wedDiv {
+        font-size: .6rem;
+       
+    }
+    
+    .ansDiv {
+        font-size: .6rem;
+    }
+}
